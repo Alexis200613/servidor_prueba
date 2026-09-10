@@ -93,7 +93,7 @@ def mi_server(environ, start_response):
         status = '404 error'
         headers = [('content-type','text/html; charset=utf-8')]
         start_response(status, headers)
-        return [b'que dijo chat?']
+        return [b'ese verbo no existe']
 
 with make_server('localhost', 9292, mi_server) as servidor:
     print("servidor activo en http://localhost:9292")
